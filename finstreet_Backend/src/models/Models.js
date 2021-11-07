@@ -37,9 +37,9 @@ const database = require('../config/database')
     });
 
     module.exports = Users;
-//     Users.sync().then(() => {
-//         console.log('table created');
-//       });
+    Users.sync().then(() => {
+        console.log('table created');
+      });
  
 //     return Users;
     
