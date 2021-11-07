@@ -8,7 +8,7 @@ const ejs = require("ejs");
 
 const port = process.env.PORT  || 3000;
 
-app.get('/',(req,res)=>res.send('INDEX'))
+app.get('/',(req,res)=>res.render('Dashbored'));
 
 const Sequelize = require('sequelize');
  
