@@ -153,19 +153,7 @@ router.get('/update',(req,res)=> {
          .catch(err => console.log(err))
  }) ; 
 
- router.get('/',(req,res)=> {
-        res.render('login')
- }) ;
  
- var uploads = multer();
-routes.post('/',uploads.none(),async (req,res)=>{
+ 
 
-      let obj={
-        LoginUsername : req.body.UserEmail,
-        LoginPassword :  req.body.Userpassword,
-        LoginTime: new Date().now,
-      
-     }
-    
-  }) 
 module.exports = router ;
